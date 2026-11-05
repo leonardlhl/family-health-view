@@ -1,6 +1,6 @@
 import {t,getLanguage,setLanguage,fold} from './i18n.js';
-import {createCloudClient,createShareClient,readShareToken,probeShareService} from './cloud.js';
-import cloudConfig from './config.js';
+import {createCloudClient,createShareClient,readShareToken,probeShareService} from './cloud.js?v=20261104-gateway1';
+import cloudConfig from './config.js?v=20261104-gateway1';
 
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

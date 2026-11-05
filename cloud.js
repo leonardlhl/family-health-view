@@ -360,7 +360,7 @@ function independentEndpoint(config) {
   }
   if (config.provider === 'cloudflare-pages') {
     // A new gateway needs a reviewed code change here, never a URL/query override.
-    const allowed = 'https://family-health-preview.family-health-cloudflare-preview.workers.dev/api/family-share';
+    const allowed = 'https://family-health-network-preview.pages.dev/api/family-share';
     if (page.origin !== 'https://leonardlhl.github.io' || !page.pathname.startsWith('/family-health-view/')
       || config.shareEndpoint !== allowed) throw new Error('新網站連接設定無效。');
     return allowed;
