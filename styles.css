@@ -126,3 +126,77 @@ dialog>.cloudflare-preview-banner{flex:none;margin:0;border-width:0 0 1px;paddin
 .booking-help{font-size:.75rem;line-height:1.8;color:var(--muted);margin:6px 0 0}
 @media(max-width:760px){.upcoming-bookings{padding:16px;margin-bottom:22px}.booking-row{grid-template-columns:minmax(0,1fr);gap:10px;padding:16px 0}.booking-when{flex-direction:row;flex-wrap:wrap;gap:6px 16px}.booking-when strong{font-size:.9375rem}.booking-sources .btn{font-size:.8125rem}}
 @media(max-width:1180px){:root:not([data-text-size="standard"]) .booking-row{grid-template-columns:minmax(0,1fr);gap:10px}}
+
+/* Approved family viewer: cloud-white canvas, cyan/lime/pink chapter entrances. */
+:root[data-view="family"]{color-scheme:light;--bg:#f0eee9;--paper:#fffefa;--ink:#18252e;--muted:#526068;--line:#cecfc9;--accent:#315e92;--soft:#e5edf1;--radius:10px;background:var(--bg)}
+:root[data-view="family"] .main{max-width:1260px}
+:root[data-view="family"] .chapter-home{max-width:1190px}
+:root[data-view="family"] .page-heading h1{font-weight:650;font-size:2.125rem}
+:root[data-view="family"] .page-heading p{font-size:.875rem}
+:root[data-view="family"] .cloudflare-preview-banner{background:transparent;border:0;border-bottom:1px solid var(--line);color:var(--muted);padding:0 0 .75rem;margin:0 0 1.35rem;font-size:.75rem;font-weight:400}
+:root[data-view="family"] .topbar{margin-bottom:1.1rem}
+:root[data-view="family"] .btn,:root[data-view="family"] .language,:root[data-view="family"] .text-size-control select,:root[data-view="family"] .search,:root[data-view="family"] .filter-control{border-radius:8px}
+:root[data-view="family"] .chapter-cover{background:var(--paper);border-radius:12px}
+:root[data-view="family"] .chapter-nav-item{border-radius:8px}
+:root[data-view="family"] .chapter-nav-item.active{background:#fffefa}
+.family-mobile-brand{display:none}
+.family-person-switch{display:flex;gap:10px;margin:-4px 0 1.4rem;flex-wrap:wrap}
+.family-person-switch button{min-height:46px;padding:.45rem 1.15rem;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;font-size:.9375rem}
+.family-person-switch button[aria-pressed="true"]{border-color:var(--ink);font-weight:650;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.family-person-switch button:hover{background:#f9faf4}
+.family-chapter-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;overflow:visible;border:0;margin:0 0 2rem;padding:0}
+.family-chapter-tabs button{min-width:0;min-height:8.2rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;padding:1rem .5rem 1.2rem;border:1px solid #18252e12;border-radius:16px;color:#18252e;font-size:1rem;line-height:1.35;white-space:normal;transition:filter .12s ease}
+.family-chapter-tabs button .icon{width:1.6rem;height:1.6rem;stroke-width:1.8}
+.family-chapter-tabs .chapter-tab-visits{background:linear-gradient(145deg,#39ddf1,#85f5e5);box-shadow:0 7px 16px #0093a128}
+.family-chapter-tabs .chapter-tab-medicines{background:linear-gradient(145deg,#d5ff4f,#b6f52a);box-shadow:0 7px 16px #6685102b}
+.family-chapter-tabs .chapter-tab-reports{background:linear-gradient(145deg,#ff83d5,#e7aeff);box-shadow:0 7px 16px #b5349426}
+.family-chapter-tabs button:hover{color:#18252e;filter:brightness(.97)}
+.family-chapter-tabs button.active{color:#18252e}
+.family-chapter-tabs button.active::after{left:35%;right:35%;bottom:.4rem;height:4px;border-radius:4px;background:#18252e}
+.chapter-tab-label{font-size:1.25rem;font-weight:650;text-wrap:balance}
+.chapter-tab-state{font-size:.75rem;font-weight:400}
+:root[data-view="family"] .upcoming-bookings{background:transparent;border:0;border-bottom:1px solid var(--line);padding:0 0 1.2rem;margin:0 0 1.5rem}
+:root[data-view="family"] .upcoming-bookings h2{font-size:1.125rem;font-weight:650}
+:root[data-view="family"] .upcoming-bookings .count{font-size:.875rem;color:var(--muted)}
+:root[data-view="family"] .booking-list{gap:12px;margin-top:1rem}
+:root[data-view="family"] .booking-row{grid-template-columns:minmax(12rem,.75fr) minmax(0,1.25fr);gap:16px 24px;padding:1.1rem;border:1px solid #dedfd9;border-radius:10px;background:#f4f3ee}
+:root[data-view="family"] .booking-nearest{background:var(--paper);border-color:#c4d0d7}
+:root[data-view="family"] .booking-when{display:flex;flex-direction:row;align-items:flex-start;gap:16px;font-size:.8125rem}
+.booking-calendar{min-width:3.5rem;background:#fffefa;border:1px solid #d4d8d2;border-radius:8px;padding:.5rem;text-align:center;color:#18252e;flex:none}
+.booking-calendar strong{display:block;font-size:1.875rem;line-height:1.15;font-weight:650}
+.booking-calendar span{display:block;font-size:.8125rem;margin-top:.25rem;white-space:nowrap}
+.booking-time{display:flex;flex-direction:column;gap:6px;min-width:0;overflow-wrap:anywhere}
+:root[data-view="family"] .booking-time>strong{font-size:1.125rem;line-height:1.4;font-weight:650}
+.booking-priority{font-size:.6875rem;color:#34516d;font-weight:600}
+:root[data-view="family"] .booking-later .booking-when,:root[data-view="family"] .booking-later .booking-calendar,:root[data-view="family"] .booking-later .booking-info,:root[data-view="family"] .booking-later .booking-info p{color:#5a6570}
+:root[data-view="family"] .booking-later .booking-calendar{border-color:transparent;background:transparent}
+:root[data-view="family"] .booking-later .booking-calendar strong{font-size:1.5rem;font-weight:500}
+:root[data-view="family"] .booking-later .booking-time>strong{font-size:.9375rem;font-weight:500}
+:root[data-view="family"] .booking-later .booking-info h3{font-size:.9375rem;font-weight:500}
+:root[data-view="family"] .booking-info .booking-note{color:inherit}
+:root[data-view="family"] .booking-help{margin-top:12px}
+@media(prefers-reduced-motion:reduce){.family-chapter-tabs button{transition:none}}
+@media(max-width:1180px){:root[data-view="family"]:not([data-text-size="standard"]) .booking-row{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:760px){
+ :root[data-view="family"] .main{padding:18px 18px 30px}
+ :root[data-view="family"] .topbar{gap:12px;align-items:center}
+ :root[data-view="family"] .family-mobile-brand{display:block;order:-2}
+ :root[data-view="family"] .mobile-home{order:2;font-size:.75rem}
+ :root[data-view="family"] .topbar-right{margin-left:auto;gap:8px}
+ :root[data-view="family"] .brand small{display:none}
+ :root[data-view="family"] .brand strong{font-size:1.15rem;font-weight:650;letter-spacing:.04em}
+ :root[data-view="family"] .text-size-control{font-size:.75rem}
+ :root[data-view="family"] .topbar .language{font-size:.75rem}
+ :root[data-view="family"] .page-heading{flex-wrap:wrap;margin-bottom:1rem}
+ :root[data-view="family"] .page-heading h1{font-size:2rem}
+ .family-person-switch{margin-bottom:1.5rem}
+ .family-chapter-tabs{gap:10px;margin-bottom:1.8rem}
+ .family-chapter-tabs button{padding:.9rem 4px 1.1rem;min-height:8rem}
+ .chapter-tab-label{font-size:1.125rem;line-height:1.35}
+ .chapter-tab-state{font-size:.6875rem}
+ :root[data-view="family"] .booking-row{grid-template-columns:minmax(0,1fr);padding:1rem;gap:12px}
+ :root[data-view="family"] .booking-when{gap:14px;flex-wrap:nowrap}
+ :root[data-view="family"] .booking-info h3{font-size:1rem}
+ :root[data-view="family"] .booking-info p{font-size:.8125rem}
+}
+@media(max-width:380px){.family-chapter-tabs{gap:8px}.family-chapter-tabs button{border-radius:12px}:root[data-view="family"] .main{padding-inline:12px}}

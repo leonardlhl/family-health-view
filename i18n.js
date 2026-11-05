@@ -1,4 +1,9 @@
 const strings={
+medicineChapter:['藥物','药物'],
+chapterCurrent:['正在查看','正在查看'],
+chapterOpen:['按此查看','按此查看'],
+nearestBooking:['最近預約','最近预约'],
+calendarMonth:['月','月'],
 connectionTitle:['資料服務連線','资料服务连接'],
 pagesConnectionHelp:['GitHub 網頁已開啟；病歷、相片及用藥感受仍需連接資料服務。','GitHub 网页已打开；病历、照片及用药感受仍需连接资料服务。'],
 testConnection:['測試資料服務連線','测试资料服务连接'],
