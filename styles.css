@@ -200,3 +200,22 @@ dialog>.cloudflare-preview-banner{flex:none;margin:0;border-width:0 0 1px;paddin
  :root[data-view="family"] .booking-info p{font-size:.8125rem}
 }
 @media(max-width:380px){.family-chapter-tabs{gap:8px}.family-chapter-tabs button{border-radius:12px}:root[data-view="family"] .main{padding-inline:12px}}
+
+/* Visits and retained appointment history share the existing search/date filters. */
+.visit-history-nav{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 1.5rem}
+.visit-history-nav button{display:flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:.65rem 1rem;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font-size:.9375rem;text-align:center}
+.visit-history-nav button[aria-pressed="true"]{border-color:#18252e;background:#d4f8f5;font-weight:650;box-shadow:inset 0 -3px 0 #18252e}
+.visit-history-nav button:hover{border-color:#18252e}
+.visit-history-nav .count{font-size:.8125rem;font-variant-numeric:tabular-nums;color:inherit}
+#visit-history-panel>h2{font-size:1.25rem}
+.visit-history-help{margin:.5rem 0 1.2rem;color:var(--muted);font-size:.875rem;max-width:65ch}
+.visit-doc-link{margin-top:.45rem}.visit-doc-link .btn{padding:.35rem 0;min-height:44px;text-align:left}
+.archived-booking-list{border-top:1px solid var(--line)}
+.archived-booking{padding:1.25rem 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.archive-booking-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;margin-bottom:.5rem;font-size:.9375rem;font-variant-numeric:tabular-nums}
+.archive-booking-head .badge{white-space:normal;font-size:.75rem}
+.archived-booking h3{font-size:1.0625rem;margin-bottom:.25rem}
+.archived-booking p{font-size:.875rem;color:var(--muted);margin-top:.25rem;white-space:pre-wrap}
+.archived-booking .booking-sources:empty{display:none}
+.archive-empty{padding:1.25rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9375rem}
+@media(max-width:760px){.visit-history-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.visit-history-nav button{padding:.65rem .5rem;flex-wrap:wrap;gap:2px 8px;font-size:.875rem}.archive-booking-head{align-items:flex-start}.visit-history-help{font-size:.8125rem}}
