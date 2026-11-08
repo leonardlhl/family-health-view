@@ -1,4 +1,12 @@
 const strings={
+medicationInventory:['現用藥清單','现用药清单'],
+inventoryRegisteredDate:['登記日期','登记日期'],
+inventoryDateOrder:['按求診／登記日期','按就诊／登记日期'],
+inventoryHelp:['家屬確認的現用藥清單；登記日期不是求診日期。','家属确认的现用药清单；登记日期不是就诊日期。'],
+inventoryReason:['清單來源說明','清单来源说明'],
+inventorySources:['清單來源文件','清单来源文件'],
+inventoryPhoto:['清單來源相片','清单来源照片'],
+noRecordedVisits:['尚未有求診紀錄','尚未有就诊记录'],
 visitHistoryLabel:['求診及醫生紙','就诊及医生文件'],
 visitHistoryHelp:['查看已記錄的求診、醫生診斷及原文件。','查看已记录的就诊、医生诊断及原文件。'],
 bookingArchive:['預約存檔','预约存档'],
